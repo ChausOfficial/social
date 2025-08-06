@@ -3,7 +3,7 @@
 <head>
     <title>Mail Sign</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/ec2b7aebf5.js" crossorigin="anonymous"></script>
     <style>
         body {
             font-size: 9pt;
@@ -13,37 +13,41 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            width: 500px;  
-            background: transparent;
+            width: 30rem;  
+            background: #1b1d1a;
+            color: white;
         }
+
+        #profile-image {
+            width: 25%;
+        }
+
         #profile-image img {
-            width: 116px; 
-            height:auto;
-            border: 0; 
+            width: 100%; 
+            height: 100%;
+            border: 0;
         }
         #profile-title {
-            color:#2c2c2c;
-            width: 331px;
+            width: 75%;
         }
         #name {
-            color: #00ff1a;
-            font-size: 15px;
+            color: #ffcc29;
+            font-size: 1rem;
         }
         #contact-details {
-            color:#2c2c2c; 
             margin: 0px; 
-            padding-top: 15px; 
+            padding-top: 1rem; 
             padding-bottom: 0px; 
-            line-height: 16px;
+            line-height: 1rem;
         }
         #contact-details a {
             text-decoration: none;
             color: inherit;
         }
-        #social-links img {
-            width: 15px;
-            height: 15px;
-            margin-top: 15px;
+        #social-links span a i {
+            color: #ffcc29;
+            margin-top: 1rem;
+            font-size: 1rem;
         }
     </style>
 </head>
@@ -53,7 +57,7 @@
     <tbody>
         <tr>
             <td id="profile-image">
-                <img src="images/logo.png" alt="photograph"> 
+                <img src="images/myLogo.png" alt="photograph"> 
             </td>
             <td id="profile-title">
                 <span id="name"><strong>SOHEL CHAUS</strong><br></span>
@@ -61,18 +65,18 @@
                 <p id="contact-details">
                     <!-- phone -->
                     <span>
-                        <strong style="color: #00ff1a;">P:</strong><a href="tel: +917517886620"><span style="text-decoration: none; color: inherit !important;"> +917517886620</span></a>
+                        <strong style="color: #ffcc29;">P:</strong><a href="tel: +917517886620"><span style="text-decoration: none; color: inherit !important;"> +917517886620</span></a>
                     </span><br>
                     <!-- email -->
                     <span>
-                        <strong style="color: #00ff1a;">E:</strong><a href="mailto:{email}"><span style="text-decoration: none; color: inherit !important;"> staybuild4me@gmail.com</span></a>
+                        <strong style="color: #ffcc29;">E:</strong><a href="mailto:{email}"><span style="text-decoration: none; color: inherit !important;"> staybuild4me@gmail.com</span></a>
                     </span><br>
                     <!-- social links -->
                      <span id="social-links">
-                        <span><a href="https://www.linkedin.com/in/chausofficial" target="_blank"><img src="images/in.svg"></a>&nbsp;</span>
-                        <span><a href="https://www.instagram.com/chausofficial" target="_blank"><img src="images/ig.svg"></a>&nbsp;</span>
-                        <span><a href="https://www.facebook.com/chausofficial" target="_blank"><img src="images/fb.svg"></a>&nbsp;</span>
-                        <span><a href="https://www.youtube.com/@chausofficial" target="_blank"><img src="images/yt.svg"></a>&nbsp;</span>
+                        <span><a href="https://www.linkedin.com/in/chausofficial" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>&nbsp;</span>
+                        <span><a href="https://www.instagram.com/chausofficial" target="_blank"><i class="fa-brands fa-instagram"></i></a>&nbsp;</span>
+                        <span><a href="https://www.facebook.com/chausofficial" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>&nbsp;</span>
+                        <span><a href="https://www.youtube.com/@chausofficial" target="_blank"><i class="fa-brands fa-youtube"></i></a>&nbsp;</span>
                     </span>
                 </p>                
             </td>

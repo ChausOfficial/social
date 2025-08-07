@@ -1,87 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Mail Sign</title>
+    <title>Sohel Chaus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://kit.fontawesome.com/ec2b7aebf5.js" crossorigin="anonymous"></script>
     <style>
         body {
-            font-size: 9pt;
+            margin: 0;
+            padding: 0;
             font-family: monospace;
         }
-        table {
+        
+        .signature-container {
+            width: 100%;
+            height: 100%;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             justify-content: center;
-            width: 30rem;  
-            background: #1b1d1a;
+            align-items: flex-start;
+            color: white;
+            background-color: #1b1d1a;
+        }
+
+        .profile {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+        }
+        .profile-image {
+            width: 25%;
+            height: auto;
+            display:
+        }
+        .profile-image img {
+            width: 100%;
+            height: auto;
+        }
+        .profile-detail {
+            width: 75%;
+            height: auto;
+        }
+        .social a img {
+            width: 1rem;
+            height: 1rem;
+        }
+        .contact a {
+            text-decoration: none;
             color: white;
         }
-
-        #profile-image {
-            width: 25%;
+        .portfolio {
+            width: 100%;
+            height: auto;
+            padding: 0 1rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            clip-path: polygon(20% 0, 25% 30%, 100% 30%, 100% 100%, 0 100%, 0 0);
+            background-color: #ffcc29;
+            color: #1b1d1a;
         }
-
-        #profile-image img {
-            width: 100%; 
-            height: 100%;
-            border: 0;
-        }
-        #profile-title {
-            width: 75%;
-        }
-        #name {
-            color: #ffcc29;
-            font-size: 1rem;
-        }
-        #contact-details {
-            margin: 0px; 
-            padding-top: 1rem; 
-            padding-bottom: 0px; 
-            line-height: 1rem;
-        }
-        #contact-details a {
+        .banner a {
+            font-weight: bold;
+            margin-left: 3rem;
+            border: none;
+            border-radius: 0.5rem;
+            padding: 0.5rem;
             text-decoration: none;
-            color: inherit;
-        }
-        #social-links span a i {
-            color: #ffcc29;
-            margin-top: 1rem;
-            font-size: 1rem;
+            color: white;
+            background-color: #1b1d1a;
         }
     </style>
 </head>
 
 <body>
-<table>
-    <tbody>
-        <tr>
-            <td id="profile-image">
-                <img src="images/myLogo.png" alt="photograph"> 
-            </td>
-            <td id="profile-title">
-                <span id="name"><strong>SOHEL CHAUS</strong><br></span>
-                <span >Web Developer | Graphics Designer<br></span>
-                <p id="contact-details">
-                    <!-- phone -->
-                    <span>
-                        <strong style="color: #ffcc29;">P:</strong><a href="tel: +917517886620"><span style="text-decoration: none; color: inherit !important;"> +917517886620</span></a>
-                    </span><br>
-                    <!-- email -->
-                    <span>
-                        <strong style="color: #ffcc29;">E:</strong><a href="mailto:{email}"><span style="text-decoration: none; color: inherit !important;"> staybuild4me@gmail.com</span></a>
-                    </span><br>
-                    <!-- social links -->
-                     <span id="social-links">
-                        <span><a href="https://www.linkedin.com/in/chausofficial" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>&nbsp;</span>
-                        <span><a href="https://www.instagram.com/chausofficial" target="_blank"><i class="fa-brands fa-instagram"></i></a>&nbsp;</span>
-                        <span><a href="https://www.facebook.com/chausofficial" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>&nbsp;</span>
-                        <span><a href="https://www.youtube.com/@chausofficial" target="_blank"><i class="fa-brands fa-youtube"></i></a>&nbsp;</span>
-                    </span>
-                </p>                
-            </td>
-        </tr>
-    </tbody>
-</table>
+    <div class="signature-container">
+        <!-- TOP SECTION -->
+        <div class="profile">
+            <div class="profile-image">
+                <img src="images/myLogo.png" alt="photograph">
+            </div>
+            <div class="profile-detail">
+                <p class="name"><strong style="color: #ffcc29; font-size: 1rem;">SOHEL CHAUS</strong><br></p>
+                <p class="role">Web Developer | Graphics Designer<br></p>
+                <p class="contact">
+                    <strong style="color: #ffcc29;">P:</strong><a href="tel: +917517886620"> +917517886620</a><br>
+                    <strong style="color: #ffcc29;">E:</strong><a href="mailto:{email}"> staybuild4me@gmail.com</a>
+                </p>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/chausofficial" target="_blank"><img src="images/linkedin.svg" alt="linkedIn"></a>&nbsp;
+                    <a href="https://www.instagram.com/chausofficial" target="_blank"><img src="images/instagram.svg" alt="instagram"></a>&nbsp;
+                    <a href="https://www.youtube.com/@chausofficial" target="_blank"><img src="images/youtube.svg" alt="youTube"></a>&nbsp;
+                </div>
+            </div>
+        </div>
+
+        <!-- BOTTOM SECTION -->
+        <div class="portfolio">
+            <p class="banner">
+                Want To See?<br>My Portfolio<a href="#" target="_blank" class="btn">Click Here</a>
+            </p>
+        </div>
+    </div>
 </body>
+
 </html>

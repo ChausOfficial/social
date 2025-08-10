@@ -9,28 +9,34 @@
     <style>
         body {
             width: 19rem;
-            height: 10rem;
+            height: auto;
             margin: 0;
             padding: 0;
             font-family: monospace;
-            font-size: clamp(0.4rem, 0.6vw + 0.3rem, 0.8rem);
+            font-size: clamp(0.6rem, 0.8vw + 0.3rem, 1rem);
         }
 
         .signature-container {
-            width: 100%;
-            height: 100%;
-            padding: 0.5rem;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+            padding: 0.5rem;
             color: white;
             background-color: #1b1d1a;
         }
 
+        .profile {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+        }
         /* ------------- */
         /* PROFILE-IMAGE */
         /* ------------- */
         .profile-image {
+            display: flex;
             width: 30%;
             height: auto;
             color: white;
@@ -42,6 +48,20 @@
             height: 100%;
         }
 
+        /* -------------- */
+        /* PROFILE DETAIL */
+        /* -------------- */
+        .profile-detail {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            height: auto;
+            color: white;
+            background-color: #1b1d1a;
+            text-align: left;
+            padding: 0 0.5rem;
+        }
+
         .portfolio {
             width: 100%;
         }
@@ -50,21 +70,23 @@
             font-weight: bold;
             text-decoration: none;
             padding: 0.5rem;
-            border-radius: 1rem;
+            border-radius: 0.5rem;
             color: #1b1d1a;
             background-color: #ffcc29;
         }
 
+
         /* -------------- */
-        /* PROFILE DETAIL */
+        /* CONTACT DETAIL */
         /* -------------- */
-        .profile-detail {
-            width: 70%;
+        .contact-detail {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
             height: auto;
+            text-align: left;
             color: white;
             background-color: #1b1d1a;
-            text-align: left;
-            padding: 0 0.5rem;
         }
 
         .contact a {
@@ -74,42 +96,50 @@
 
         .social {
             width: 100%;
-            display: flex;
+            display: inline-block;
+            aspect-ratio: 1/1;
             align-items: center;
         }
 
-        .social a img {
-            width: 1rem;
-            height: 1rem;
+        .social img {
+            width: 1.5rem;
+            height: auto;
             color: #ffcc29;
-            font-size: 1rem;
         }
     </style>
 </head>
 
 <body>
-    <table class="signature-container" cellpadding="0" cellspacing="0" border="0" style="text-align: center;">
-        <tr>
-            <!-- LEFT SECTION -->
+    <table class="signature-container" cellpadding="0" cellspacing="0" border="0">
+        <tr class="profile">
+                <!-- LEFT SECTION -->
             <td class="profile-image">
                 <img src="images/profile-logo.webp" alt="photograph">
-                <p class="portfolio">
-                    <a href="https://sohelalkasiri.github.io/my-portfolio/" target="_blank" class="btn">Portfolio</a>
-                </p>
             </td>
 
             <!-- RIGHT SECTION -->
             <td class="profile-detail">
-                <p class="name"><strong style="color: #ffcc29; font-size: 1rem;">Sohel Alkasiri</strong><br></p>
+                <p class="name"><strong style="color: #ffcc29; font-size: 1rem;">SOHEL ALKASIRI</strong><br></p>
                 <p class="role">Web Dev | Gfx Designer<br></p>
+                <p class="portfolio">
+                    <a href="https://sohelalkasiri.github.io/my-portfolio/" target="_blank" class="btn">Portfolio</a>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <!-- BOTTOM SECTION -->
+            <td class="contact-detail">
                 <p class="contact">
                     <strong style="color: #ffcc29;">P:</strong><a href="tel: +917517886620"> +917517886620</a><br>
                     <strong style="color: #ffcc29;">E:</strong><a href="mailto:{email}"> chausconnect@gmail.com</a>
                 </p>
                 <p class="social">
-                    <a href="https://www.linkedin.com/in/sohelalkasiri" target="_blank"><img src="images/linkedin.webp" alt="LinkedIn"></a>&nbsp;
-                    <a href="https://www.instagram.com/sohelalkasiri" target="_blank"><img src="images/instagram.webp" alt="Instagram"></a>&nbsp;
-                    <a href="https://www.youtube.com/@sohelalkasiri" target="_blank"><img src="images/youtube.webp" alt="YouTube"></src></a>&nbsp;
+                    <a href="https://www.linkedin.com/in/sohelalkasiri" target="_blank"><img src="images/linkedin.webp"
+                            alt="LinkedIn"></a>&nbsp;
+                    <a href="https://www.instagram.com/sohelalkasiri" target="_blank"><img src="images/instagram.webp"
+                            alt="Instagram"></a>&nbsp;
+                    <a href="https://www.youtube.com/@sohelalkasiri" target="_blank"><img src="images/youtube.webp"
+                            alt="YouTube"></src></a>&nbsp;
                 </p>
             </td>
         </tr>
